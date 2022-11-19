@@ -71,12 +71,10 @@ body {
        margin-top:10px;
        
      }
-     .container button{
-      
-      width:350px;
-       height:40px;
-       
-     }
+     .container input[type=submit]{
+     
+      cursor:pointer;
+    }
      .container input[type=checkbox]{
      
        height:30px; 
