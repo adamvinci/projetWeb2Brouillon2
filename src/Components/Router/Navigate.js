@@ -6,7 +6,7 @@
  * has to import all the pages to render them.
  */
 
-const Navigate = (toUri) => {
+ const Navigate = (toUri) => {
   const fromUri = window.location.pathname;
   if (fromUri === toUri) return;
 

@@ -1,7 +1,6 @@
 import UserIcon1 from '../../img/userI1.jpg';
 import UserIcon2 from '../../img/userI2.png';
 import { isAuthenticated, setAnonymeUser, setAuthenticatedUser } from '../../utils/auths';
-import { clearPage } from '../../utils/render';
 import Navbar from '../Navbar/Navbar';
 import Navigate from '../Router/Navigate';
 
@@ -59,7 +58,6 @@ homePage=`
 
 
 const HomePage = () => {
-  clearPage();
   Navbar();
   console.log(isAuthenticated())
   const main = document.querySelector('main');  
@@ -114,10 +112,11 @@ setAuthenticatedUser(authenticatedUser)
   }
 
   if(type==="anonymLogin"){
+    console.log(usernameAnonyme)
    setAnonymeUser(usernameAnonyme); 
   }
+  Navbar();
 
-  
   Navigate('/new');
 });
 

@@ -1,5 +1,5 @@
 
-
+import logoutIcon from '../../img/logoutIcon.png';
 import { isAuthenticated } from "../../utils/auths";
 
  const Navbar = () => {
@@ -18,11 +18,11 @@ import { isAuthenticated } from "../../utils/auths";
   <li >
     <a data-uri="/Ranking">Ranking</a>
     </li> 
-  ${isAuthenticated() ? ' <li> <a data-uri="/Ranking">MyStats</a> </li>   ' : '<li> <a  href="/" >Login/Register</a> </li>'}
+  ${isAuthenticated() ? ' <li> <a data-uri="/Ranking">MyStats</a> </li>   ' : '<li> <a   href="#"  data-uri="/" >Login/Register</a> </li>'}
   <li>
-    <a data-uri="/Ranking">Contact</a>
+    <a  href="#" data-uri="/contact">Contact</a>
    </li> 
-   ${isAuthenticated() ? '<li> <a href="/logout" >Logout</a> </li>' :''}
+   ${isAuthenticated() ?  `<div><a  href="/logout"> <img src="${logoutIcon}" > </a> </div>` :''}
   </ul>
   `;
  }

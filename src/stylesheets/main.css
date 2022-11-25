@@ -10,25 +10,25 @@ body {
 
    hr{
     height:10px;
-      width:33%;
+     
        display:inline-block;
         margin:20px -1px;  
-        
+        width: 33%;
     }
     
     .hr1{
       background-color:black;
      float:left;
-    
+
     }
     .hr2{
       background-color:rgb(255, 255, 0);
-        width:34%
+width: 33.82%;
     }
     .hr3{
       background-color:#C41E3A;
-      float:right
-    
+      float:right;
+
     }
     #navbarWrapper ul{
       display: flex ;
@@ -46,9 +46,10 @@ body {
     text-decoration: none;
     color: inherit; 
     }
-    #navbarWrapper li a:hover{
+    #navbarWrapper a:hover{
       font-size: xx-large;
     }
+
    #navbarWrapper li:first-child:hover {
       color: black;
   }
@@ -57,6 +58,12 @@ body {
 }
 #navbarWrapper li:nth-child(3):hover {
   color: red;
+}
+
+#navbarWrapper img {
+  position: absolute;
+  right: 20px;
+  top: 30px;
 }
    /*--------------------------------------------------------------------------------HOMEPAGE-----------------------------------------------------------*/ 
 
@@ -113,3 +120,44 @@ body {
          width:20px;
      }
      
+/*--------------------------------------------------------------------------------CoONTACTPAGE-----------------------------------------------------------*/ 
+
+.contactpage #header {
+  margin-top: -20px;
+  text-align: center;
+
+}
+.contactpage #header button,p{
+ 
+  display: inline-block;
+  font-size: large;
+  padding: 15px;
+
+
+}
+
+.contactpage #header  button{
+ border: none;
+  background: none;
+  cursor: pointer;
+} 
+
+.contactpage #header  p{
+ 
+  color: aliceblue;
+
+} 
+.contactpage .form{
+  margin-top:50px;
+  display:flex;
+   justify-content:center;
+}
+.contactpage .form #message{
+ width: 600px;
+ height: 150px;
+}
+.contactpage .form #type{
+  width: 500px;
+  height: 50px;
+  text-align: center;
+ }
