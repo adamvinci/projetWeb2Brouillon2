@@ -3,7 +3,7 @@ body {
       margin:0 0;
      
   }
- /*--------------------------------------------------------------------------------HEADER-----------------------------------------------------------*/ 
+ /*--------------------------------------------------------------------------------NAVBAR-----------------------------------------------------------*/ 
   h1{
     text-align:center ;
    }
@@ -30,6 +30,34 @@ body {
       float:right
     
     }
+    #navbarWrapper ul{
+      display: flex ;
+      justify-content: center;
+      list-style: none;
+      margin: 0 ; padding: 0;
+    }
+    #navbarWrapper li {
+      margin-top: 30px;
+      }
+    #navbarWrapper li a{
+    font-size: x-large;
+      padding:  50px;
+    cursor:pointer ;
+    text-decoration: none;
+    color: inherit; 
+    }
+    #navbarWrapper li a:hover{
+      font-size: xx-large;
+    }
+   #navbarWrapper li:first-child:hover {
+      color: black;
+  }
+  #navbarWrapper li:nth-child(2):hover {
+    color: yellow;
+}
+#navbarWrapper li:nth-child(3):hover {
+  color: red;
+}
    /*--------------------------------------------------------------------------------HOMEPAGE-----------------------------------------------------------*/ 
 
     .connexion{

@@ -1,9 +1,13 @@
 import Navigate from '../Router/Navigate';
 import { clearPage } from '../../utils/render';
+import { getAuthenticatedUser } from '../../utils/auths';
+import Navbar from '../Navbar/Navbar';
 
 const NewPage = () => {
   clearPage();
+  Navbar();
   renderGoBackHomeButton();
+  console.log(getAuthenticatedUser())
 };
 
 function renderGoBackHomeButton() {
