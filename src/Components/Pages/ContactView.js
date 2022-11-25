@@ -11,6 +11,7 @@ const contactpage= `
 <button type="button" id="changePage"  >Add Message</button >
  <p> View Message</p>
 </div>
+
  ${isAuthenticated() ? 'aa' : 'Vous n etes pas connecter'}
 
 
@@ -21,11 +22,12 @@ const contactpage= `
 `
 
 const contactPage = () => {
+    console.log(isAuthenticated())
     const main = document.querySelector('main');
     main.innerHTML=contactpage;
-    document.addEventListener('click', () => {
+    document.querySelector('#changePage').addEventListener('click', ()=>{
         Navigate('/contact');
-      });
+    });
 };
 
 

@@ -1,6 +1,7 @@
 import { getAnonymUser, getAuthenticatedUser, isAuthenticated } from "../../utils/auths"
 import Navigate from '../Router/Navigate';
 
+
 const contactpage= `
 <section class="contactpage">
 
@@ -52,6 +53,7 @@ const contactpage= `
 `
 
 const contactPage = () => {
+  console.log(getAuthenticatedUser())
     const main = document.querySelector('main');
     main.innerHTML=contactpage;
     document.addEventListener('submit',async (e)=>{
@@ -63,7 +65,7 @@ const contactPage = () => {
         
     });
  document.querySelector('#changePage').addEventListener('click', ()=>{
-    Navigate('/new');
+    Navigate('/contactView');
 });
 };
 

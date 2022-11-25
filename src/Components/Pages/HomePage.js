@@ -115,7 +115,6 @@ setAuthenticatedUser(authenticatedUser)
     console.log(usernameAnonyme)
    setAnonymeUser(usernameAnonyme); 
   }
-  Navbar();
 
   Navigate('/new');
 });
