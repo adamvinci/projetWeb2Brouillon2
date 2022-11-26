@@ -3,7 +3,7 @@ import { isAuthenticated } from "../../utils/auths";
 
  const Navbar = () => {
   const navbarWrapper = document.querySelector('#navbarWrapper');
-   let navbar='';
+   let navbar= '';
     
   if(window.location.pathname==='/' && !isAuthenticated()){
  navbar += `
