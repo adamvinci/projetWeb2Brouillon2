@@ -6,6 +6,8 @@
  * has to import all the pages to render them.
  */
 
+import Navbar from "../Navbar/Navbar";
+
 
 
  const Navigate = (toUri) => {
@@ -13,7 +15,9 @@
   if (fromUri === toUri) return;
   window.history.pushState({}, '', toUri);
   const popStateEvent = new PopStateEvent('popstate', { state: {} });
+  Navbar();
   dispatchEvent(popStateEvent);
+ 
 };
 
 export default Navigate;

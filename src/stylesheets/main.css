@@ -143,7 +143,6 @@ width: 33.82%;
 
 } 
 .contactpage .form{
-  margin-top:50px;
   display:flex;
    justify-content:center;
 }
@@ -156,3 +155,35 @@ width: 33.82%;
   height: 50px;
   text-align: center;
  }
+ /*   VIEW */
+ .contactpage #message2{
+
+   text-align: center;
+   padding-bottom: 20px;
+
+ }
+
+.contactpage #container2{
+  margin: auto auto;
+      border:1px solid;
+      border-width:  0.4em;
+      padding:30px;
+      width: 50%;
+      border-color: black #FFFF8F #C41E3A;
+      border-radius : 25px;
+
+}
+.contactpage  #type2,#content2{
+  font-size: large;
+}
+.contactpage #type2{
+margin-top: -20px;
+float: left;
+}
+
+.contactpage #content2{
+  text-align: center;
+}
+.contactpage #message2 button{
+ float: right;
+}
